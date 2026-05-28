@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores Argentinos | Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor">
+            <h1 class="logo">Sabores Argentinos</h1>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="recetas.html">Recetas</a></li>
+                    <li><a href="regiones.html">Regiones</a></li>
+                    <li><a href="historias.html">Historias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <section class="seccion">
+            <h2 class="titulo-seccion">Compartí una receta con historia</h2>
+
+            <div class="postal-gastronomica">
+                <p class="intro-contacto">
+                    ¿Tenés una receta familiar que cuenta una historia argentina? Compartila con nosotros y formá parte de la tradición culinaria de nuestro país.
+                </p>
+
+                <form>
+                    <label for="nombre">¿Cómo te llamás?</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                    <label for="email">Tu email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+                    <fieldset class="selector-grupo">
+                        <legend>¿De qué región viene tu receta?</legend>
+                        <div class="chips">
+                            <input type="radio" id="region-norte" name="region" value="norte">
+                            <label for="region-norte">Norte</label>
+                            <input type="radio" id="region-patagonia" name="region" value="patagonia">
+                            <label for="region-patagonia">Patagonia</label>
+                            <input type="radio" id="region-cuyo" name="region" value="cuyo">
+                            <label for="region-cuyo">Cuyo</label>
+                            <input type="radio" id="region-litoral" name="region" value="litoral">
+                            <label for="region-litoral">Litoral</label>
+                            <input type="radio" id="region-bsas" name="region" value="bsas">
+                            <label for="region-bsas">Buenos Aires</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="selector-grupo">
+                        <legend>¿Qué representa esta receta para vos?</legend>
+                        <div class="chips">
+                            <input type="radio" id="mood-familia" name="mood" value="familia">
+                            <label for="mood-familia">Familia</label>
+                            <input type="radio" id="mood-tradicion" name="mood" value="tradicion">
+                            <label for="mood-tradicion">Tradición</label>
+                            <input type="radio" id="mood-infancia" name="mood" value="infancia">
+                            <label for="mood-infancia">Infancia</label>
+                            <input type="radio" id="mood-viajes" name="mood" value="viajes">
+                            <label for="mood-viajes">Viajes</label>
+                            <input type="radio" id="mood-celebracion" name="mood" value="celebracion">
+                            <label for="mood-celebracion">Celebración</label>
+                        </div>
+                    </fieldset>
+
+                    <label for="mensaje">Contanos la historia detrás de esta receta…</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí aquí tu historia y receta" required></textarea>
+
+                    <button type="submit" class="boton">Compartir receta</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Sabores Argentinos · Proyecto académico de Producción Digital 1</p>
+    </footer>
+
+</body>
+</html>
