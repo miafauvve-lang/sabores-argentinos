@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Lato', Arial, sans-serif;
+    --marron-oscuro: #4a1f0f;
+    --marron-medio: #6b3418;
+    --marron-claro: #8c5a3c;
+    --beige: #f5f1ea;
+    --beige-2: #ebe3d8;
+    --blanco: #ffffff;
+    --mostaza: #d8a620;
+    --texto: #2d1a12;
+    --gris-borde: #d8d0c6;
+    --sombra: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--beige);
+    color: var(--texto);
+    line-height: 1.75;
+    font-size: 1rem;
+}
+
+h1, h2, h3, legend, label {
+    font-family: var(--font-serif);
+}
+
+.logo {
+    font-family: var(--font-serif);
+    color: var(--blanco);
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    letter-spacing: 0.04em;
+}
+
+.titulo-seccion {
+    font-family: var(--font-serif);
+    font-size: 2.15rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
+    color: var(--texto);
+}
+
+.hero h2,
+.tarjeta h3,
+.receta-card h3,
+.historia-texto h3 {
+    font-weight: 600;
+}
+
+.hero p,
+.tarjeta-contenido p,
+.historia-texto p,
+.intro-contacto,
+.meta,
+label,
+legend {
+    font-family: var(--font-sans);
+}
+
+.menu a {
+    font-weight: 500;
+    letter-spacing: 0.04em;
+}
+
+.boton,
+button.boton {
+    font-family: var(--font-sans);
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-header {
+    background: linear-gradient(to right, var(--marron-oscuro), var(--marron-medio));
+    padding: 18px 0;
+    text-align: center;
+}
+
+.logo {
+    color: var(--blanco);
+    font-size: 2rem;
+    margin-bottom: 14px;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.menu li {
+    display: flex;
+}
+
+.menu a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.16);
+    color: var(--blanco);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    min-width: 110px;
+}
+
+.hero {
+    background: linear-gradient(rgba(74, 31, 15, 0.70), rgba(74, 31, 15, 0.70)),
+        url("../imagenes/portada.jpg") center/cover no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-contenido {
+    color: var(--blanco);
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    letter-spacing: -0.03em;
+}
+
+.hero p {
+    font-size: 1.05rem;
+    max-width: 620px;
+    margin: 0 auto 24px;
+}
+
+.boton,
+button.boton {
+    display: inline-block;
+    background-color: var(--mostaza);
+    color: var(--texto);
+    font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.boton-secundario {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: var(--marron-oscuro);
+    color: var(--blanco);
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+}
+
+.seccion {
+    padding: 50px 0;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 2.15rem;
+    margin-bottom: 32px;
+    color: var(--texto);
+    letter-spacing: -0.02em;
+}
+
+.grid-tarjetas,
+.grid-recetas,
+.lista-recetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.tarjeta,
+.receta-card,
+.historia-destacada,
+.formulario-caja {
+    background-color: var(--blanco);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: var(--sombra);
+}
+
+.tarjeta-contenido,
+.receta-info,
+.historia-texto,
+.formulario-caja {
+    padding: 18px;
+}
+
+.tarjeta h3,
+.receta-card h3,
+.historia-texto h3 {
+    font-size: 1.95rem;
+    margin-bottom: 10px;
+    color: var(--marron-oscuro);
+}
+
+.meta {
+    font-size: 0.95rem;
+    color: var(--marron-claro);
+    margin-bottom: 10px;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.filtros span {
+    flex: 0 0 auto;
+    padding: 10px 16px;
+    border: 2px solid var(--marron-oscuro);
+    border-radius: 12px;
+    background-color: var(--blanco);
+    font-weight: 600;
+    font-family: var(--font-sans);
+}
+
+.historia-destacada img {
+    min-height: 220px;
+    object-fit: cover;
+}
+
+.intro-contacto {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--marron-oscuro);
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--gris-borde);
+    border-radius: 14px;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    background-color: #faf8f5;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.site-footer {
+    background-color: var(--beige-2);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    color: var(--marron-oscuro);
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        font-size: 3rem;
+    }
+
+    .menu ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h2 {
+        font-size: 3.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .grid-tarjetas,
+    .grid-recetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lista-recetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .historia-destacada {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .historia-destacada img {
+        height: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-tarjetas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-recetas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        min-height: 80vh;
+    }
+}
+
+/* Interacción en recetas */
+.interaccion {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.favorito {
+    text-align: center;
+}
+
+.favorito input {
+    display: none;
+}
+
+.favorito label {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    color: #ddd;
+    display: inline-block;
+}
+
+.favorito label:hover {
+    transform: scale(1.1);
+}
+
+.favorito input:checked + label {
+    color: #e74c3c;
+    animation: heartPulse 0.6s ease;
+}
+
+@keyframes heartPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.rating {
+    display: flex;
+    direction: rtl;
+    justify-content: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin: 0 2px;
+}
+
+.rating label:hover,
+.rating input:checked ~ label {
+    color: #ffd700;
+}
+
+.interaccion textarea {
+    min-height: 80px;
+    margin-bottom: 10px;
+}
+
+.interaccion button {
+    align-self: flex-start;
+}
+
+.interaccion button:hover {
+    background-color: var(--marron-medio);
+}
+
+/* Rediseño de contacto como postal gastronómica */
+.postal-gastronomica {
+    background-color: var(--blanco);
+    background-image:
+        radial-gradient(circle at 20% 80%, rgba(216, 168, 32, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(116, 53, 28, 0.05) 0%, transparent 50%),
+        linear-gradient(45deg, var(--beige) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--beige) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--beige-2) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--beige-2) 75%);
+    background-size: 20px 20px, 30px 30px, 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+    background-position: 0 0, 0 0, 0 0, 10px 10px, 0 0, 10px 10px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.postal-gastronomica::before {
+    content: "🍽️";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    opacity: 0.3;
+}
+
+.postal-gastronomica::after {
+    content: "📖";
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    opacity: 0.3;
+}
+
+.selector-grupo {
+    border: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.selector-grupo legend {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--marron-oscuro);
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.chips input {
+    display: none;
+}
+
+.chips label {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 2px solid var(--marron-claro);
+    border-radius: 25px;
+    background-color: var(--beige);
+    color: var(--marron-oscuro);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.chips label:hover {
+    background-color: var(--marron-claro);
+    color: var(--blanco);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chips input:checked + label {
+    background-color: var(--mostaza);
+    border-color: var(--mostaza);
+    color: var(--texto);
+    box-shadow: 0 4px 12px rgba(216, 168, 32, 0.3);
+}
+
+@media (min-width: 768px) {
+    .postal-gastronomica {
+        padding: 40px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .selector-grupo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .chips {
+        justify-content: center;
+    }
+
+    .chips label {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
